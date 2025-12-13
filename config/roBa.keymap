@@ -103,7 +103,7 @@
 &kp ESCAPE        &kp LS(LC(TAB))   &kp UP_ARROW    &kp LS(TAB)        &kp K_PLAY_PAUSE                                               &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp TAB           &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp LS(CAPSLOCK)  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &kp LEFT_SHIFT    &kp LS(LG(LEFT))  &trans          &kp LS(LG(RIGHT))  &trans            &trans                       &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&kp LEFT_CONTROL  &trans            &trans          &trans             &trans            &trans                       &trans          &trans                                                                     &kp PIPE
+&kp LEFT_CONTROL  &kp LEFT_WIN      &trans          &trans             &trans            &trans                       &trans          &trans                                                                     &kp PIPE
             >;
         };
 
