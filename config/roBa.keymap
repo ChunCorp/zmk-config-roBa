@@ -40,7 +40,7 @@
         };
 
         muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
+            bindings = <&to_layer_0 LS(CAPSLOCK)>;
             key-positions = <11 10>;
         };
 
@@ -49,9 +49,9 @@
             key-positions = <20 21>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
     };
 
@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G      &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B      &kp COLON                          &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_HENKAN  &kp SPACE  &lt_to_layer_0 2 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                          &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                          &kp G      &kp C_PLAY_PAUSE                   &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B      &kp COLON                          &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LS(CAPSLOCK)  &kp SPACE  &lt_to_layer_0 2 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,19 +91,19 @@
 
         FUNCNUM {
             bindings = <
-&kp ESC           &kp F1  &kp F2   &kp F3   &kp F4                                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &trans
-&kp TAB           &kp F5  &kp F6   &kp F7   &kp F8   &trans      &kp HOME         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL        &trans
-&kp LEFT_SHIFT    &kp F9  &kp F10  &kp F11  &kp F12  &trans      &kp PRINTSCREEN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &kp N0
-&kp LEFT_CONTROL  &trans  &trans   &trans   &trans   &trans      &trans           &trans                                                              &trans
+&kp ESC           &kp F1  &kp F2   &kp F3   &kp F4                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &kp MINUS
+&kp TAB           &kp F5  &kp F6   &kp F7   &kp F8   &trans      &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK     &kp SLASH
+&kp LEFT_SHIFT    &kp F9  &kp F10  &kp F11  &kp F12  &trans      &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &kp EQUAL
+&kp LEFT_CONTROL  &trans  &trans   &trans   &trans   &trans      &trans  &trans                                                              &trans
             >;
         };
 
         ARWSYM {
             bindings = <
-&kp ESCAPE        &kp LS(LC(TAB))   &kp UP_ARROW    &kp LS(TAB)        &kp K_PLAY_PAUSE                                               &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB           &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp LS(CAPSLOCK)  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&kp LEFT_SHIFT    &kp LS(LG(LEFT))  &trans          &kp LS(LG(RIGHT))  &trans            &trans                       &kp PLUS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN      &trans          &trans             &trans            &trans                       &trans          &trans                                                                     &kp PIPE
+&kp ESCAPE        &kp LS(LC(TAB))  &kp UP_ARROW    &kp LS(TAB)      &trans                                &kp CARET             &kp AT_SIGN            &kp TILDE       &kp AMPERSAND    &kp PERCENT
+&kp TAB           &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp LS(LG(S))      &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH        &kp DOLLAR       &kp EXCLAMATION
+&kp LEFT_SHIFT    &kp HOME         &kp LG(TAB)     &kp END          &trans  &trans             &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
+&kp LEFT_CONTROL  &kp LEFT_WIN     &trans          &trans           &trans  &trans             &trans     &trans                                                                        &kp PIPE
             >;
         };
 
