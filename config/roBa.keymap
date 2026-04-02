@@ -31,37 +31,31 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
-            layers = <0>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
-            layers = <0>;
         };
 
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
-            layers = <0>;
         };
 
         Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-            layers = <0>;
         };
 
         Colon {
             bindings = <&kp COLON>;
             key-positions = <27 26>;
-            layers = <0>;
         };
 
         UnderScore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <16 17>;
-            layers = <0>;
         };
 
         Plus {
@@ -73,31 +67,26 @@
         LeftKakko {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <29 30>;
-            layers = <0>;
         };
 
         RightKakko {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <30 31>;
-            layers = <0>;
         };
 
         BackSlash {
             bindings = <&kp BACKSLASH>;
             key-positions = <33 32>;
-            layers = <0>;
         };
 
         KagiKakkoH {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <29 30>;
-            layers = <2>;
+            key-positions = <29 30 39>;
         };
 
         KagiKakkoT {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <31 30>;
-            layers = <2>;
+            key-positions = <31 30 39>;
         };
     };
 
